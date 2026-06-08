@@ -26,7 +26,7 @@ jobs:
 
       # Paso 3: Construir la imagen de Docker (usando working-directory)
       - name: Build Docker Image
-        working-directory: ./EjemploMicroservicio1-main
+        working-directory: ./guias/guias
         run: |
           docker build -t ${{ secrets.DOCKERHUB_USERNAME }}/my-app:latest .
 
